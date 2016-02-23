@@ -2,11 +2,9 @@
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
 
+/// primary font family
+$primary-font-family: 'minion-pro','Times New Roman',serif;
 
-
-
-
-/// Regular font family
 /// @type List
 $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
@@ -14,17 +12,9 @@ $text-font-stack: 'Open Sans', 'Helvetica Neue Light', 'Helvetica Neue', 'Helvet
 /// @type List
 $code-font-stack: 'Courier New', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Monaco', monospace !default;
 
-
-
-
-
-/// Copy text color
-/// @type Color
-$text-color: rgb(34, 34, 34) !default;
-
-/// Main brand color
-/// @type Color
-$brand-color: rgb(229, 0, 80) !default;
+/// Red
+// @type Color
+$red: rgb(229, 0, 80) !default;
 
 /// Light grey
 /// @type Color
@@ -37,6 +27,31 @@ $mid-grey: rgb(153, 153, 153) !default;
 /// Dark grey
 /// @type Color
 $dark-grey: rgb(68, 68, 68) !default;
+
+/// Black
+/// @type Color
+$black: #222222;
+
+/// White
+/// @type Color
+$white: #ffffff;
+
+/// primary background color
+/// @type Color
+$primary-background-color: $black !default;
+
+/// primary text color
+/// @type Color
+$primary-text-color: $white !default;
+
+
+/// Copy text color
+/// @type Color
+$text-color: $black !default;
+
+/// Main brand color
+/// @type Color
+$brand-color: $white;
 
 
 
@@ -69,4 +84,8 @@ $breakpoints: (
 /// @type String
 /// @example scss - When using a CDN
 ///   $base-url: 'http://cdn.example.com/assets/';
-$base-url: '/assets/' !default;
+$base-url: '../img' !default;
+
+///margin setting for center
+///@type ?
+$margin-auto-center: 0, auto;
