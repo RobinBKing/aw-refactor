@@ -41,12 +41,11 @@ body {
   width: 90%;
   color: $primary-text-color;
   padding-top: 1.5em;
-  @media only screen and (min-width: 600px),
-         only screen and (min-width: 350px) and (orientation: landscape) {
+  @include respond-to(medium) {
     width: 100%;
     padding: 0;
   }
-  @media only screen and (min-width: 1140px) {
+  @include respond-to(large) {
     height: 100vh;
   }
 }
@@ -69,25 +68,22 @@ nav {
     li {
       display: inline-block;
       margin-right: 2%;
-      @media only screen and (min-width: 600px),
-             only screen and (min-width: 350px) and (orientation: landscape) {
+      @include respond-to(medium) {
          display: block;
       }
       a {
         color: $mid-grey;
         font-size: 10px;
         color: $black;
-        @media only screen and (min-width: 600px),
-               only screen and (min-width: 350px) and (orientation: landscape) {
-         font-size: 12px;
-         display: block;
-         line-height: 19px;
+        @include respond-to(medium) {
+          font-size: 12px;
+          display: block;
+          line-height: 19px;
         }
       }
     }
   }
-  @media only screen and (min-width: 600px),
-         only screen and (min-width: 350px) and (orientation: landscape) {
+  @include respond-to(medium) {
    position: absolute;
    width: 170px;
    height: 170px;

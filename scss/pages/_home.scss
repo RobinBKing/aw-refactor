@@ -11,13 +11,12 @@
     margin-top: 0;
     color: $white;
   }
-  @media only screen and (min-width: 600px),
-         only screen and (min-width: 350px) and (orientation: landscape) {
+  @include respond-to(medium) {
     position: absolute;
     left: 10vh;
     bottom: 40%;
   }
-  @media only screen and (min-width: 1140px) {
+  @include respond-to(large) {
     bottom: 10vh;
   }
 }
@@ -36,14 +35,13 @@
     text-decoration: none;
     color: black;
   }
-  @media only screen and (min-width: 600px),
-         only screen and (min-width: 350px) and (orientation: landscape) {
+  @include respond-to(medium) {
     border-bottom: 10px solid #fff;
     .featureTitle {
     display: none;
     }
   }
-  @media only screen and (min-width: 1140px) {
+  @include respond-to(large) {
     float: left;
     width: 73%;
     height:100%;
@@ -68,8 +66,9 @@
   h3 {
     display: none;
   }
-  @media only screen and (min-width: 600px),
-         only screen and (min-width: 350px) and (orientation: landscape) {
+  // @media only screen and (min-width: 600px),
+  //        only screen and (min-width: 350px) and (orientation: landscape) 
+  @include respond-to(medium) {
     padding-top: 4em;
     padding-bottom: 6em;
     background-color: black;
@@ -93,7 +92,7 @@
       font-family: "minion-pro"
     }
   }
-  @media only screen and (min-width: 1140px) {
+  @include respond-to(large) {
     float: left;
     margin: 0 auto;
     width: 27%;
@@ -115,8 +114,7 @@
   img {
     display: none;
   }
-  @media only screen and (min-width: 600px),
-        only screen and (min-width: 350px) and (orientation: landscape) {
+  @include respond-to(medium) {
     padding-top: 2em;
     border-left: 10px solid #fff;
     background-color: black;
@@ -130,15 +128,7 @@
       color: #fff;
     }
   }
-  @media only screen and (min-width: 1140px) {
-    border-left: 0;
-    border-top: 10px solid #fff;
-    float: left;
-    margin: 0 auto;
-    width: 27%;
-    height: auto;
-  }
-  @media only screen and (min-width: 1140px) {
+  @include respond-to(large) {
     border-left: 0;
     border-top: 10px solid #fff;
     float: left;
