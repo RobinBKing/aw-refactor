@@ -41,35 +41,59 @@ body {
   width: 90%;
   color: $primary-text-color;
   padding-top: 1.5em;
+  @media only screen and (min-width: 600px),
+         only screen and (min-width: 350px) and (orientation: landscape) {
+    width: 100%;
+    padding: 0;
+  }
+  @media only screen and (min-width: 1140px) {
+    height: 100vh;
+  }
 }
 
 nav {
-  background-color: #fffeff;
+  background-color: $off-white;
   height: auto;
   width: auto;
-  margin: 0;
-  padding: 0.5rem 0.5rem 0 0.5rem;
+  padding: $nav-padding;
   h1 {
-      margin:  0;
       a {
         font-size: 15px;
-        text-decoration: none;
-        color: black;
+        color: $black;
       }
   }
   ul {
     list-style: none;
-    background-color: #f2f2f2;
-    padding: 0.5rem 0.5rem 0.5rem 0;
+    background-color: $light-grey;
+    padding: $nav-padding;
     li {
       display: inline-block;
       margin-right: 2%;
+      @media only screen and (min-width: 600px),
+             only screen and (min-width: 350px) and (orientation: landscape) {
+         display: block;
+      }
       a {
-        color: #999999;
+        color: $mid-grey;
         font-size: 10px;
-        text-decoration: none;
-        color: black;
+        color: $black;
+        @media only screen and (min-width: 600px),
+               only screen and (min-width: 350px) and (orientation: landscape) {
+         font-size: 12px;
+         display: block;
+         line-height: 19px;
+        }
       }
     }
   }
+  @media only screen and (min-width: 600px),
+         only screen and (min-width: 350px) and (orientation: landscape) {
+   position: absolute;
+   width: 170px;
+   height: 170px;
+   opacity: .95;
+   position: fixed;
+   margin-top: 50px;
+   margin-left: 50px;
+ }
 }

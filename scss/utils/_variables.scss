@@ -36,6 +36,10 @@ $black: #222222;
 /// @type Color
 $white: #ffffff;
 
+/// Off White
+/// @type Color
+$off-white: #fffeff;
+
 /// primary background color
 /// @type Color
 $primary-background-color: $black !default;
@@ -87,5 +91,9 @@ $breakpoints: (
 $base-url: '../img' !default;
 
 ///margin setting for center
-///@type ?
+///@type margin
 $margin-auto-center: 0, auto;
+
+///padding setting for nav and ul
+///@type padding
+$nav-padding: 0.5rem 0.5rem 0 0.5rem;
